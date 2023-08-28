@@ -123,7 +123,7 @@ export default function AppHeader({collapsed, setCollapsed}) {
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    height: collapsed? '60px' : '60px',
+                    height: collapsed? '65px' : '65px',
                 }}
             >
                 <Row>
