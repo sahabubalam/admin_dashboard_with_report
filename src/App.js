@@ -15,7 +15,7 @@ import Login from "./components/auth/Login";
 
 function App() {
 
-    const [collapsed, setCollapsed] = useState(false)
+    const [collapsed, setCollapsed] = useState(true)
     const contextValue = {collapsed, setCollapsed, logo}
 
     return (
