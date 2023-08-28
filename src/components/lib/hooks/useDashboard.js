@@ -23,6 +23,7 @@ export default function useDashboard() {
   const [showAllData, setShowAllData] = useState(false);
 
   const today = Form.useWatch("today", form);
+  const graph = Form.useWatch("graph", form) || 'line';
   const overview = [{ id: 1, type: "today" }];
 
   const toggleShowAllData = () => {
@@ -94,17 +95,19 @@ export default function useDashboard() {
       2021: 6,
     },
   ];
+
+  const geometryValue= graph==='line'? 'line' : 'column';
   const config = {
     data: [data, data],
     xField: "year",
     yField: ["2020", "2021"],
     geometryOptions: [
       {
-        geometry: "line",
+        geometry: geometryValue,
         color: "#0D6EFD",
       },
       {
-        geometry: "line",
+        geometry: geometryValue,
         color: "#A8CBFE",
       },
     ],

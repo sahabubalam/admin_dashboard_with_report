@@ -258,7 +258,7 @@ export default function Sidebar({collapsed, logo}) {
                 left: 0,
                 top: 0,
                 bottom: 0,
-                transition: '.2s',
+                transition: collapsed ? '0.5s ease' : '0.1s ease',
                 boxShadow:
                     '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
                 background: colorBgContainer,
@@ -274,8 +274,8 @@ export default function Sidebar({collapsed, logo}) {
                     alt="Logo"
                     style={
                         collapsed
-                            ? {margin: '15px',marginTop:'20px', width: '50px', transition: '.4s', textAlign: 'center', color: 'white'}
-                            : {margin: '15px',marginTop:'20px', width: '132px', transition: '.4s', textAlign: 'center', color: 'white'}
+                            ? {margin: '15px',marginTop:'20px', width: '50px', transition: '.5s', textAlign: 'center', color: 'white'}
+                            : {margin: '15px',marginTop:'20px', width: '132px', transition: '.5s', textAlign: 'center', color: 'white'}
                     }
                 />
             </div>

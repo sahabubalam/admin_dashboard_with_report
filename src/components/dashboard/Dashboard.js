@@ -226,7 +226,17 @@ export default function Dashboard() {
               <Card
                 title="User Overview"
                 extra={
-                  <Form form={form} style={{ marginTop: "8px" }}>
+                  <Form form={form} style={{ marginTop: "8px",display:'flex' }}>
+                    <Form.Item name="graph">
+                      <Select style={{ width: 120,marginRight:'3px' }} defaultValue="line">
+                          <Select.Option value='line'>
+                           Line Chart
+                          </Select.Option>
+                          <Select.Option  value='bar'>
+                           Bar Chart
+                          </Select.Option>
+                      </Select>
+                    </Form.Item>
                     <Form.Item name="today">
                       <Select style={{ width: 120 }}>
                         {overview.map((item) => (

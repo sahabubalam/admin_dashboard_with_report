@@ -123,20 +123,20 @@ export default function AppHeader({collapsed, setCollapsed}) {
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    height: collapsed? '41.5px' : '60px'
+                    height: collapsed? '60px' : '60px',
                 }}
             >
                 <Row>
-                    {/*<div style={{color: 'white'}}>*/}
-                    {/*    {React.createElement(*/}
-                    {/*        collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,*/}
-                    {/*        {*/}
-                    {/*            className: 'trigger',*/}
-                    {/*            onClick: () => setCollapsed(!collapsed),*/}
-                    {/*        }*/}
-                    {/*    )*/}
-                    {/*    }*/}
-                    {/*</div>*/}
+                  <div style={{color: 'white'}}>
+                      {React.createElement(
+                         collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+                         {
+                           className: 'trigger',
+                         onClick: () => setCollapsed(!collapsed),
+                         }
+                      )
+                      }
+                  </div>
                     <div
                         style={{
                             cursor: 'pointer',
