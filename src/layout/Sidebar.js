@@ -268,7 +268,7 @@ export default function Sidebar({collapsed, logo}) {
             collapsible
             collapsed={collapsed}
         >
-            <div className="logo" style={{backgroundColor: '#23303E',height: '60px',text:'center',position:'relative'}}>
+            <div className="logo" style={{backgroundColor: '#23303E',height: '65px',text:'center',position:'relative'}}>
                 <img
                     src={logo}
                     alt="Logo"
