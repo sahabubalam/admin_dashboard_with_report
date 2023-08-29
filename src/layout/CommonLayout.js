@@ -37,7 +37,7 @@ export default function CommonLayout({ children }) {
             textAlign: 'center',
           }}
         >
-          © All rights reserved for Shop Lover 2023
+          © All rights reserved for Admin Report 2023
         </Footer>
       </Layout>
     </Layout>
