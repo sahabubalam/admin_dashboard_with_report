@@ -12,8 +12,8 @@ export default function CommonLayout({ children }) {
     <Layout
       style={{
         minHeight: '100vh',
-        marginLeft: collapsed ? 80 : 200,
-        transition: '.4s',
+        marginLeft: collapsed ? 80 : 220,
+        transition: '.5s',
       }}
     >
       <Sidebar

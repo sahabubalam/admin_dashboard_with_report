@@ -119,7 +119,7 @@ export default function AppHeader({collapsed, setCollapsed}) {
                     fontSize: '16px',
                     position: 'sticky',
                     top: 0,
-                    zIndex: 9999999,
+                    // zIndex: 9999999,
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -168,13 +168,13 @@ export default function AppHeader({collapsed, setCollapsed}) {
                             }}
                         >
                             <Avatar
-                                style={{marginRight: '5px', width: '22px', height: '22px', color: 'white',textAlign:'center',marginTop:'4px'}}
+                                style={{marginRight: '5px', width: '22px', height: '22px', color: 'white',alignItems:'center',marginTop:'4%'}}
                                 size="large"
                             />
                             <p
                                 style={{
                                     color: 'white',
-                                    marginTop: '15px',
+                                    marginTop: '15%',
                                     marginRight: '10px',
                                     fontSize:'12px'
                                 }}

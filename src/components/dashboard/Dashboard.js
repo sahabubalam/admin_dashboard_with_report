@@ -73,7 +73,7 @@ export default function Dashboard() {
                     <img
                       alt=""
                       style={{
-                        width: "90px",
+                        width: "90%",
                         height: "50px",
                         backgroundColor: "#FFFFFF",
                       }}
@@ -118,7 +118,7 @@ export default function Dashboard() {
                     <img
                       alt=""
                       style={{
-                        width: "90px",
+                        width: "90%",
                         height: "50px",
                         backgroundColor: "#FFFFFF",
                       }}
@@ -163,8 +163,8 @@ export default function Dashboard() {
                     <img
                       alt=""
                       style={{
-                        width: "35px",
-                        height: "50px",
+                        width: "50%",
+                        height: "80%",
                         backgroundColor: "#FFFFFF",
                       }}
                       src={pieChart}

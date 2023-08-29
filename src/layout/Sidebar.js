@@ -258,7 +258,7 @@ export default function Sidebar({collapsed, logo}) {
                 left: 0,
                 top: 0,
                 bottom: 0,
-                transition: collapsed ? '0.5s ease' : '0.1s ease',
+                transition: collapsed ? '0.5s ease' : '0.5s ease',
                 boxShadow:
                     '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
                 background: colorBgContainer,
@@ -268,14 +268,14 @@ export default function Sidebar({collapsed, logo}) {
             collapsible
             collapsed={collapsed}
         >
-            <div className="logo" style={{backgroundColor: '#23303E',height: '65px',text:'center',position:'relative'}}>
+            <div className="logo" style={{text:'center',position:'relative'}}>
                 <img
                     src={logo}
                     alt="Logo"
                     style={
                         collapsed
-                            ? {margin: '15px',marginTop:'20px', width: '50px', transition: '.5s', textAlign: 'center', color: 'white'}
-                            : {margin: '15px',marginTop:'20px', width: '132px', transition: '.5s', textAlign: 'center', color: 'white'}
+                            ? {margin: '15px',marginTop:'20px', width: '50px', transition: '.5s', textAlign: 'center'}
+                            : {margin: '15px',marginTop:'20px', width: '132px', transition: '.5s', textAlign: 'center',}
                     }
                 />
             </div>

@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './assets/images/logo.svg'
+import logo from './assets/images/logo.png'
 import {Route, Routes} from 'react-router-dom';
 import {AppProvider} from "./contexts/apps";
 import {useState} from "react";
